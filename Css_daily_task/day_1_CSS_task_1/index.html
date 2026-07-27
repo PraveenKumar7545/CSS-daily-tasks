@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        College Application Form
+    </h1>
+
+    <hr>
+
+    <form>
+
+        <span id="spl">
+
+            <label for="First_name">First Name:</label>
+            <input type="text" id="First_name" name="First_name" required>
+
+            <label for="Last_name">Last Name:</label>
+            <input type="text" id="Last_name" name="Last_name">
+
+            <label for="Initials">Initials:</label>
+            <input type="text" id="Initials" name="Initials" required>
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="PWD">Password:</label>
+            <input type="password" id="PWD" name="PWD" required>
+
+            <label for="Phno">Phone Number:</label>
+            <input type="tel" id="Phno" name="Phno" required>
+
+            <label>Gender:</label>
+
+            <div class="options">
+                <input type="radio" name="gender" value="male">
+                <span>Male</span>
+
+                <input type="radio" name="gender" value="female">
+                <span>Female</span>
+            </div>
+
+            <label>Skills:</label>
+
+            <div class="options">
+                <input type="checkbox" name="skill" value="java">
+                <span>Java</span>
+
+                <input type="checkbox" name="skill" value="python">
+                <span>Python</span>
+
+                <input type="checkbox" name="skill" value="web">
+                <span>Web Development</span>
+            </div>
+
+            <label for="Department">Department:</label>
+
+            <select name="Department" id="Department" required>
+                <option value="">--Select Dept--</option>
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="Mech">Mechanical</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file">
+
+            <div class="buttons">
+                <input type="submit" id="Submit" value="Register">
+                <input type="reset" id="Re" value="Reset">
+            </div>
+
+        </span>
+
+    </form>
+
+</body>
+
+</html>
