@@ -1,0 +1,79 @@
+body {
+    background-color: #d3d3d3;
+}
+
+.heading {
+    border: 1px solid;
+    background-color: #e0e3e7;
+    border-radius: 5px;
+    margin: 15px auto;
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+}
+
+label {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    width: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fund Transfer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 class="heading">SBI - NEFT Transfer Charges</h2>
+
+    <hr>
+
+    <form>
+
+        <p>Select Account:</p>
+
+        <table>
+
+            <tr>
+                <th>Select</th>
+                <th>Account No</th>
+                <th>Type</th>
+                <th>Branch</th>
+                <th>Balance</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="account">
+                </td>
+
+                <td>1234567897XXXX</td>
+                <td>Savings</td>
+                <td>Sattur</td>
+                <td>3024</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount">
+
+        <br><br>
+
+        <label for="purpose">Purpose:</label>
+
+        <select id="purpose" name="purpose">
+            <option value="personal">Personal</option>
+            <option value="business">Business</option>
+        </select>
+
+        <br><br>
+
+        <p>Select Beneficiary:</p>
+
+        <table>
+
+            <tr>
+                <th>Select</th>
+                <th>Account No</th>
+                <th>Intra Bank Beneficiary Name</th>
+                <th>Branch</th>
+                <th>Limit</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="beneficiary" value="praveen">
+                </td>
+
+                <td>9876543210XXXX</td>
+                <td>Praveen Kumar M</td>
+                <td>Madurai</td>
+                <td>100000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="beneficiary" value="ranjan">
+                </td>
+
+                <td>9361797545XXXX</td>
+                <td>Ranjan</td>
+                <td>Kanpur</td>
+                <td>250000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="beneficiary" value="kathir">
+                </td>
+
+                <td>258963147XXXX</td>
+                <td>Kathir</td>
+                <td>Delhi</td>
+                <td>60000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="beneficiary" value="siva">
+                </td>
+
+                <td>624835179XXXX</td>
+                <td>Siva Suriya</td>
+                <td>Nepal</td>
+                <td>750000</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <p>Select Payment Option:</p>
+
+        <label>Payment Option:</label>
+
+        <br>
+
+        <input type="radio" name="payment" value="pay-now">
+        Pay Now
+
+        <input type="radio" name="payment" value="schedule-later">
+        Schedule Later
+
+        <input type="radio" name="payment" value="standing-instruction">
+        Standing Instruction
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Cancel">
+
+    </form>
+
+</body>
+
+</html>
