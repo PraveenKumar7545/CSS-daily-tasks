@@ -7,7 +7,7 @@ I am improving my frontend development skills by creating webpages using HTML5 a
 ## 📚 Tasks
 
 * ✅ Task 01 - College Application Form
-* ⏳ Task 02
+* ✅ Task 02 - SBI Fund Transfer Form
 * ⏳ Task 03
 * ⏳ Task 04
 
