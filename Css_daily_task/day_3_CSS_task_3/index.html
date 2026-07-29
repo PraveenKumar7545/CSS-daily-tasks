@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IndusInd Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Credit Card</h1>
+
+    <h2>Step 1: Provide Your IndusInd Credit Card Details</h2>
+
+    <p>
+        Please Enter Your IndusInd Bank Credit Card Number & Payment Amount
+    </p>
+
+    <h2 class="card-heading">Select Card Type</h2>
+
+    <form>
+
+        <div class="card-options">
+
+            <label>
+                <input type="radio" name="card" value="visa">
+                <img src="src/visa.png" alt="Visa Card">
+            </label>
+
+            <label>
+                <input type="radio" name="card" value="mastercard">
+                <img src="src/mastercard.png" alt="Mastercard">
+            </label>
+
+            <label>
+                <input type="radio" name="card" value="rupay">
+                <img src="src/rupay.png" alt="RuPay Card">
+            </label>
+
+        </div>
+
+        <br>
+
+        <label>IndusInd Bank Credit Card No:</label>
+
+        <div class="card-number">
+            <input type="number" name="card_number">
+            <input type="number" name="card_number">
+            <input type="number" name="card_number">
+            <input type="number" name="card_number">
+        </div>
+
+        <br>
+
+        <label>Re-Enter IndusInd Bank Credit Card No:</label>
+
+        <div class="card-number">
+            <input type="number" name="confirm_card_number">
+            <input type="number" name="confirm_card_number">
+            <input type="number" name="confirm_card_number">
+            <input type="number" name="confirm_card_number">
+        </div>
+
+        <br>
+
+        <label for="mail">Email ID:</label>
+
+        <input
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="Enter your mail id"
+        >
+
+        <br><br>
+
+        <label for="phno">Mobile Number:</label>
+
+        <input
+            type="tel"
+            id="phno"
+            name="phno"
+            placeholder="Enter your number"
+        >
+
+        <br><br>
+
+        <label for="payno">Payment Amount:</label>
+
+        <input
+            type="number"
+            id="payno"
+            name="payno"
+            placeholder="For example: 100000"
+        >
+
+        <p>
+            <span id="spl">
+                Choose your bank account below and click on submit
+            </span>
+        </p>
+
+        <hr>
+
+        <label for="bank">Select Bank Account:</label>
+
+        <select id="bank" name="bank">
+
+            <option value="">-- Select Bank Option --</option>
+            <option value="sbi">SBI</option>
+            <option value="icici">ICICI</option>
+            <option value="hdfc">HDFC</option>
+            <option value="tngb">TNGB</option>
+
+        </select>
+
+        <br><br>
+
+        <div class="submit-button">
+
+            <input type="submit" value="Submit">
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
