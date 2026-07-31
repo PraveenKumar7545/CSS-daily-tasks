@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+body > br { 
+    display: none; 
+}
+
+p.fourlayer-grid { 
+    display: none; 
+}
+
+body::before {
+    content: '';
+    order: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#first {
+    order: 1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+#first:last-of-type {
+    margin-left: auto;
+}
+
+#first button {
+    background-color: red;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.bg {
+    order: 2;
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    background-image: url("src/couple-driving-convertible-banner-3000x1000.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2.up {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+p.up {
+    order: 4;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+h3:nth-of-type(1) { order: 5; }
+h3:nth-of-type(2) { order: 6; }
+h3:nth-of-type(3) { order: 7; }
+h3:nth-of-type(4) { order: 8; }
+
+h3 {
+    width: 25%;
+    margin: 0;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+h3 u {
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #000000;
+    padding-bottom: 5px;
+}
+
+h3:nth-of-type(1) + p { order: 9; }
+h3:nth-of-type(2) + p { order: 10; }
+h3:nth-of-type(3) + p { order: 11; }
+h3:nth-of-type(4) + p { order: 12; }
+
+h3 + p {
+    width: 25%;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #cccccc;
+    line-height: 2.5; 
+}
+
+p.frame {
+    order: 13;
+    width: 46%;
+    margin: 0 2% 80px 2%;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+p.frame img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.button, .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.button { background-color: #2e8b57; }
+.btn { background-color: #d50000; }
+
+p[id="one"], p[id="o"], p[id="n"] {
+    order: 14;
+    width: 30%;
+    margin: 0 1.6% 80px 1.6%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 8px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: transparent;
+    box-sizing: border-box;
+}
+
+p[id="one"] img, p[id="o"] img, p[id="n"] img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #d50000;
+}
+
+h2.fo, h2.foo, h2.foot {
+    order: 17;
+    width: 33.33%;
+    margin: 0;
+    padding: 60px 20px 20px 10%;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-top-width: 5px;
+    
+}
+
+h3[id="aa"], h3[id="bb"], h3[id="cc"] {
+    order: 18;
+    width: 33.33%;
+    margin: 0;
+    padding: 0 20px 80px 10%;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+}
