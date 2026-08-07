@@ -59,7 +59,7 @@ A modern and responsive **Fitness Landing Page** built using **HTML5 and CSS3**.
 ## 📂 Folder Structure
 
 ```
-Day-05-CSS-Fitness-Landing-Page/
+Day-06-CSS-Fitness-Landing-Page/
 │
 ├── index.html
 ├── style.css
