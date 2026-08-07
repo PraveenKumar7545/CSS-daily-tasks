@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0F172A;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(15,23,42,0.8);
+  backdrop-filter: blur(10px);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #CBD5E1;
+  text-decoration: none;
+}
+
+.logo {
+  color: #F97316;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 20px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #F97316;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-content {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 16px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  gap: 40px;
+}
+
+.about img {
+  width: 400px;
+  border-radius: 16px;
+}
+
+/* GRID */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* PROGRAM */
+.program img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.program h3 {
+  margin-top: 10px;
+}
+
+/* TRAINERS */
+.trainer {
+  text-align: center;
+}
+
+.trainer img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* PRICING */
+.pricing {
+  padding: 30px;
+  text-align: center;
+  background: #1E293B;
+  border-radius: 16px;
+}
+
+.highlight {
+  border: 2px solid #F97316;
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  gap: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1E293B;
+}
