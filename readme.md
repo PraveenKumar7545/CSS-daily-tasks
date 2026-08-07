@@ -13,6 +13,7 @@ Improving my frontend development skills by building responsive and visually app
 - ✅ Task 03 - IndusInd Bank Credit Card Payment Form
 - ✅ Task 04 - Calculator User Interface
 - ✅ Task 05 - NAB Personal Banking Landing Page
+- ✅ Task 06 - Fitness-Landing-Page
 
 ---
 
