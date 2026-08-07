@@ -1,4 +1,4 @@
-# 🏋️ Day-05-CSS-Fitness-Landing-Page
+# 🏋️ Day-06-CSS-Fitness-Landing-Page
 
 A modern and responsive **Fitness Landing Page** built using **HTML5 and CSS3**. This project focuses on creating a clean user interface with multiple sections, responsive layouts, Flexbox, CSS Grid, glassmorphism cards, and modern styling techniques.
 
