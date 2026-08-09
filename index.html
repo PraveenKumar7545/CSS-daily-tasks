@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSS Daily Tasks</title>
+
+<style>
+
+    /* ================= RESET ================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* ================= BODY ================= */
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fb;
+        color: #1e293b;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    nav {
+        background: linear-gradient(135deg, #0f172a, #2563eb);
+
+        padding: 22px;
+
+        text-align: center;
+
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+        position: sticky;
+        top: 0;
+
+        z-index: 100;
+    }
+
+    nav h2 {
+        color: white;
+
+        font-size: 25px;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* ================= MAIN ================= */
+
+    .container {
+        width: 90%;
+
+        max-width: 1050px;
+
+        margin: 60px auto;
+
+        min-height: 75vh;
+    }
+
+
+    /* ================= HEADING ================= */
+
+    .heading {
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+    .heading h1 {
+        font-size: 38px;
+
+        color: #0f172a;
+
+        margin-bottom: 12px;
+    }
+
+    .heading p {
+        color: #64748b;
+
+        font-size: 17px;
+    }
+
+
+    /* ================= TASK GRID ================= */
+
+    .tasks {
+        display: grid;
+
+        grid-template-columns: repeat(6, 1fr);
+
+        gap: 30px;
+
+        align-items: stretch;
+    }
+
+
+    /* ================= TASK CARD ================= */
+
+    .task {
+        background-color: white;
+
+        padding: 32px 25px;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        border: 1px solid #e2e8f0;
+
+        box-shadow:
+            0 6px 18px rgba(15, 23, 42, 0.08);
+
+        transition: all 0.3s ease;
+    }
+
+
+    /* ================= CARD HOVER ================= */
+
+    .task:hover {
+        transform: translateY(-8px);
+
+        border-color: #93c5fd;
+
+        box-shadow:
+            0 12px 25px rgba(37, 99, 235, 0.18);
+    }
+
+
+    /* ================= DAY TITLE ================= */
+
+    .task h3 {
+        display: inline-block;
+
+        color: #2563eb;
+
+        background-color: #eff6ff;
+
+        padding: 7px 15px;
+
+        border-radius: 20px;
+
+        font-size: 18px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* ================= DESCRIPTION ================= */
+
+    .task p {
+        color: #64748b;
+
+        margin-bottom: 22px;
+
+        font-size: 15px;
+    }
+
+
+    /* ================= BUTTON ================= */
+
+    .task a {
+        display: inline-block;
+
+        text-decoration: none;
+
+        background: linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+
+        color: white;
+
+        padding: 11px 20px;
+
+        border-radius: 7px;
+
+        font-size: 14px;
+
+        font-weight: bold;
+
+        transition: all 0.3s ease;
+
+        box-shadow:
+            0 5px 12px rgba(37, 99, 235, 0.2);
+    }
+
+
+    .task a:hover {
+        background: linear-gradient(
+            135deg,
+            #0f172a,
+            #2563eb
+        );
+
+        transform: scale(1.05);
+
+        box-shadow:
+            0 8px 18px rgba(37, 99, 235, 0.3);
+    }
+
+
+    /* =================================================
+       3 CARDS - FIRST ROW
+       ================================================= */
+
+    .task:nth-child(1),
+    .task:nth-child(2),
+    .task:nth-child(3) {
+
+        grid-column: span 2;
+    }
+
+
+    /* =================================================
+       2 CARDS - SECOND ROW CENTER
+       ================================================= */
+
+    .task:nth-child(4) {
+
+        grid-column: 2 / span 2;
+    }
+
+    .task:nth-child(5) {
+
+        grid-column: 4 / span 2;
+    }
+
+
+    /* =================================================
+       1 CARD - THIRD ROW CENTER
+       ================================================= */
+
+    .task:nth-child(6) {
+
+        grid-column: 3 / span 2;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        background-color: #0f172a;
+
+        color: white;
+
+        text-align: center;
+
+        padding: 28px;
+
+        margin-top: 70px;
+    }
+
+    footer p {
+        margin: 6px;
+    }
+
+    footer strong {
+        color: #60a5fa;
+    }
+
+
+    /* ================= TABLET ================= */
+
+    @media (max-width: 800px) {
+
+        .container {
+            width: 90%;
+
+            margin: 45px auto;
+        }
+
+        .heading h1 {
+            font-size: 32px;
+        }
+
+        .tasks {
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .task:nth-child(n) {
+            grid-column: auto;
+        }
+
+        .task:nth-child(5) {
+
+            grid-column: 1 / 2;
+        }
+
+        .task:nth-child(6) {
+
+            grid-column: 2 / 3;
+        }
+
+    }
+
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 550px) {
+
+        .heading h1 {
+            font-size: 28px;
+        }
+
+        .heading p {
+            font-size: 15px;
+        }
+
+        .tasks {
+            grid-template-columns: 1fr;
+
+            gap: 25px;
+        }
+
+        .task:nth-child(n) {
+            grid-column: auto;
+        }
+
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<nav>
+
+    <h2>
+        CSS Daily Tasks
+    </h2>
+
+</nav>
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="container">
+
+
+    <!-- ================= HEADING ================= -->
+
+    <div class="heading">
+
+        <h1>
+            CSS Daily Tasks
+        </h1>
+
+        <p>
+            My CSS practice projects
+        </p>
+
+    </div>
+
+
+    <!-- ================= TASK CARDS ================= -->
+
+    <div class="tasks">
+
+
+        <!-- ================= DAY 01 ================= -->
+
+        <div class="task">
+
+            <h3>
+                Day 01
+            </h3>
+
+            <p>
+                CSS Task 01
+            </p>
+
+            <a
+                href="Css_daily_task/day_1_CSS_task_1/index.html"
+                target="_blank">
+
+                View Task
+
+            </a>
+
+        </div>
+
+
+        <!-- ================= DAY 02 ================= -->
+
+        <div class="task">
+
+            <h3>
+                Day 02
+            </h3>
+
+            <p>
+                CSS Task 02
+            </p>
+
+            <a
+                href="Css_daily_task/day_2_CSS_task_2/index.html"
+                target="_blank">
+
+                View Task
+
+            </a>
+
+        </div>
+
+
+        <!-- ================= DAY 03 ================= -->
+
+        <div class="task">
+
+            <h3>
+                Day 03
+            </h3>
+
+            <p>
+                CSS Task 03
+            </p>
+
+            <a
+                href="Css_daily_task/day_3_CSS_task_3/index.html"
+                target="_blank">
+
+                View Task
+
+            </a>
+
+        </div>
+
+
+        <!-- ================= DAY 04 ================= -->
+
+        <div class="task">
+
+            <h3>
+                Day 04
+            </h3>
+
+            <p>
+                CSS Task 04
+            </p>
+
+            <a
+                href="Css_daily_task/day_4_CSS_task_4/index.html"
+                target="_blank">
+
+                View Task
+
+            </a>
+
+        </div>
+
+
+        <!-- ================= DAY 05 ================= -->
+
+        <div class="task">
+
+            <h3>
+                Day 05
+            </h3>
+
+            <p>
+                NAP Application
+            </p>
+
+            <a
+                href="Css_daily_task/day_5_CSS_task_5/NAP_Application/index.html"
+                target="_blank">
+
+                View Task
+
+            </a>
+
+        </div>
+
+
+        <!-- ================= DAY 06 ================= -->
+
+        <div class="task">
+
+            <h3>
+                Day 06
+            </h3>
+
+            <p>
+                CSS Task 06
+            </p>
+
+            <a
+                href="Css_daily_task/day_6_CSS_task_6/index.html"
+                target="_blank">
+
+                View Task
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        CSS Daily Tasks
+    </p>
+
+    <p>
+        Created by <strong>Praveen Kumar M</strong>
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
