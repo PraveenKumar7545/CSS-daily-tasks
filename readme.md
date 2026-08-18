@@ -3,7 +3,7 @@
 A collection of my daily CSS practice tasks and webpage styling projects.
 
 Improving my frontend development skills by building responsive and visually appealing webpages using HTML5 and CSS3.
-
+ 
 --- 
 
 ## 📚 Tasks
