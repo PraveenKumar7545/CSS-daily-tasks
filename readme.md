@@ -9,7 +9,7 @@ Improving my frontend development skills by building responsive and visually app
 ## 📚 Tasks
 
 - ✅ Task 01 - College Application Form
-- ✅ Task 02 - SBI Fund Transfer Form
+- ✅ Task 02 - SBI Fund Transfer Form       
 - ✅ Task 03 - IndusInd Bank Credit Card Payment Form
 - ✅ Task 04 - Calculator User Interface
 - ✅ Task 05 - NAB Personal Banking Landing Page
